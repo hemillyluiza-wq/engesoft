@@ -1,0 +1,4 @@
+From alpine:3.24.1
+RUN ["apk","update"]
+RUN ["apk", "add","figlet"]
+RUN echo $HOME > minha-pasta.txt
