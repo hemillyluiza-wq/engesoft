@@ -1,7 +1,10 @@
 FROM alpine:3.24.1
+
 RUN <<EOF
+
 apk update
 apk add figlet
 apk cache clean --purge
 acho $HOME > minha-pasta.txt
+
 EOF
